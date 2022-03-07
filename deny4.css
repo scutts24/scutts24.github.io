@@ -10,22 +10,39 @@ body {
 
 .top-right {
   position: absolute;
-  bottom: 30%;
-  right: 17%;
-  font-size: 1.5vw;
+  top: 10%;
+  right: 70%;
+  font-size: 0.8vw;
 }
 
 .bottom-right {
   position: absolute;
-  bottom: 12%;
-  right: 45%;
-  font-size: 2.5vw;
+  bottom: 5%;
+  right: -40%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+}
+
+.top-left {
+  position: absolute;
+  bottom: 7%;
+  right: -40%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 10%;
+  right: 26%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2vw;
 }
 
 .centered {
   position: absolute;
   top: 78%;
-  left: 44%;
+  left: 46%;
   transform: translate(-50%, -50%);
 }
 
