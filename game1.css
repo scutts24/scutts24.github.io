@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+
+p {
+text-align: center;
+width: 115%;
+}
+
+a {
+text-align: center;
+font-family: monospace;
+}
