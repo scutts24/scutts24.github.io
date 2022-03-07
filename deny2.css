@@ -8,17 +8,17 @@ body {
   color: floralwhite;
 }
 
-.centered {
+.bottom-right {
   position: absolute;
-  top: 83%;
-  left: 45.5%;
-  transform: translate(-50%, -50%);
+  bottom: 30%;
+  right: 17%;
 }
 
-h1 {
-  color: floralwhite;
-  text-align: center;
-  font-size: 2vw;
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 44%;
+  transform: translate(-50%, -50%);
 }
 
 p {
@@ -30,8 +30,7 @@ font-size: 1.2vw;
 }
 
 a {
-color: floralwhite;
-text-align: left;
+text-align: center;
 font-family: monospace;
-font-size: 1.2vw;
+font-size: 1.5vw;
 }
