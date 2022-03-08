@@ -1,0 +1,155 @@
+body {
+  background-color: black;
+}
+
+.image {
+  position: relative;
+}
+
+.photo1 {
+  position:  absolute;
+  top: 35%;
+  right: 12%;
+}
+.photo1:hover {
+  transform: rotate(230deg);
+  filter: invert(100%);
+}
+
+.photo2 {
+  position:  absolute;
+  top: 10%;
+  right: 35%;
+}
+.photo2:hover {
+  transform: rotate(140deg);
+  filter: invert(100%);
+}
+
+.photo3 {
+  position:  absolute;
+  top: 60%;
+  right: 50%;
+}
+.photo3:hover {
+  transform: rotate(75deg);
+  filter: invert(100%);
+}
+
+.photo4 {
+  position:  absolute;
+  top: 10%;
+  right: 80%;
+}
+.photo4:hover {
+  transform: rotate(112deg);
+  filter: invert(100%);
+}
+
+.photo5 {
+  position:  absolute;
+  top: 50%;
+  right: 12%;
+}
+.photo5:hover {
+  transform: rotate(288deg);
+  filter: invert(100%);
+}
+
+.photo6 {
+  position:  absolute;
+  top: 25%;
+  right: 80%;
+}
+.photo6:hover {
+  transform: rotate(100deg);
+  filter: invert(100%);
+}
+
+.photo7 {
+  position:  absolute;
+  top: 10%;
+  right: 65%;
+}
+.photo7:hover {
+  transform: rotate(130deg);
+  filter: invert(100%);
+}
+
+.photo8 {
+  position:  absolute;
+  top: 10%;
+  right: 12%;
+}
+.photo8:hover {
+  transform: rotate(202deg);
+  filter: invert(100%);
+}
+
+img {
+  border-radius: 50%;
+  width: 10vw;
+  height:  10vw;
+}
+
+.rock1 {
+  position: absolute;
+  top: 22%;
+  right: 22%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: monospace;
+}
+
+.rock2 {
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: monospace;
+  color: dimgrey;
+}
+
+.rock3 {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: monospace;
+}
+
+.rock4 {
+  position: absolute;
+  bottom: 25%;
+  right: 43%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: monospace;
+}
+
+.secret {
+  position: absolute;
+  bottom: 42%;
+  right: 22%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: monospace;
+}
+
+p {
+text-align: center;
+width: 115%;
+}
+
+a {
+text-align: center;
+font-family: monospace;
+color: black;
+}
+
+a:hover {
+  filter: invert(6%);
+  text-decoration: none;
+}
