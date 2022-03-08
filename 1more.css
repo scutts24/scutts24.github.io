@@ -97,8 +97,9 @@ img {
   top: 22%;
   right: 22%;
   transform: translate(-50%, -50%);
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-family: monospace;
+  color: dimgrey;
 }
 
 .rock2 {
@@ -106,7 +107,7 @@ img {
   top: 23%;
   left: 23%;
   transform: translate(-50%, -50%);
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-family: monospace;
   color: dimgrey;
 }
@@ -116,8 +117,9 @@ img {
   top: 40%;
   right: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-family: monospace;
+  color: dimgrey;
 }
 
 .rock4 {
@@ -125,7 +127,7 @@ img {
   bottom: 25%;
   right: 43%;
   transform: translate(-50%, -50%);
-  font-size: 1.5vw;
+  font-size: 3vw;
   font-family: monospace;
 }
 
