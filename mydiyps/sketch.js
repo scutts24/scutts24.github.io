@@ -1,15 +1,15 @@
 //var img;
-var image1 = loadImage("heartstickers.png");
-var image2 = loadImage("rippedpaper.png");
-var initials ='jm'; // your initials
+var img1 = loadImage("heartstickers.png");
+var img2 = loadImage("rippedpaper.png");
+var initials ='slc'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
  preload() //runs once, it may make you wait
-  image1 = loadImage('mydiyps/heartstickers.png')
-  image2 = loadImage('mydiyps/rippedpaper.png')
+  img1 = loadImage('mydiyps/heartstickers.png')
+  img2 = loadImage('mydiyps/rippedpaper.png')
 //link to an image on your github account
   //image1 = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
   //image2 = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
@@ -22,7 +22,7 @@ background(251, 248, 243);
 }
 
 function draw() {
-  image(image2, 0, 0, 875, 700)
+  image(img2, 0, 0, 875, 700)
   if (keyIsPressed) {
     choice = key; // set choice to the key that was pressed
     clear_print(); // check to see if it is clear screen or save image
@@ -160,7 +160,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     rect(mouseX, mouseY, pmouseX, pmouseY);
 
   } else if (toolChoice == 'g' || toolChoice == 'G') { //sticker, places the image we pre-loaded
-    image(image1, mouseX, mouseY);
+    image(img1, mouseX, mouseY);
   }
  }
 function testbox(r, g, b) {
