@@ -5,16 +5,16 @@ var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
- //preload() //runs once, it may make you wait
-  //img = loadImage('heartstickers.png');  // [name].png needs to be next to this .js file
+ preload() //runs once, it may make you wait
+  img = loadImage('heartstickers.png');  // [name].png needs to be next to this .js file
 // you can link to an image on your github account
   //img = loadImage('https://dma-git.github.io/images/heartstickers.png');
 }
 
 function setup() {
-//bg = loadImage('https://dma-git.github.io/images/rippedpaper.png');
+bg = loadImage('https://dma-git.github.io/images/rippedpaper.png');
 createCanvas(875, 700);  // canvas is size of screen i think
-background(251, 248, 243);
+//background(251, 248, 243);
 
 }
 
