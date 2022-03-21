@@ -6,16 +6,16 @@ var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
  preload() //runs once, it may make you wait
-  img = loadImage('mydiyps/heartstickers.png')
+  //img = loadImage('mydiyps/heartstickers.png')
 //link to an image on your github account
-  //img = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
+  img = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
   //img2 = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
 }
 
 function setup() {
-bg = loadImage('mydiyps/rippedpaper.png');
+//bg = loadImage('mydiyps/rippedpaper.png');
 createCanvas(875, 700);  // canvas size
-//background(251, 248, 243);
+background(251, 248, 243);
 
 }
 
