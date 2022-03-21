@@ -6,14 +6,14 @@ var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
  preload() //runs once, it may make you wait
-  //img = loadImage('heartstickers.png'); 
-// you can link to an image on your github account
+//link to an image on your github account
   img = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
+  img2 = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
 }
 
 function setup() {
 bg = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
-createCanvas(875, 700);  // canvas is size of screen i think
+createCanvas(875, 700);  // canvas size
 //background(251, 248, 243);
 
 }

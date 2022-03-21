@@ -6,3 +6,12 @@ net art css files: yellow dot
 p5js files: green dot
 
 haha nvm just make a custom tag and change file sorting options to 'by tag', it's more specific that way
+
+also I just realized that you can in fact make folders for better sorting, you just need to change links and stuff
+
+example:
+https://scutts24.github.io/mydiyps/heartstickers.png
+
+the 'heartstickers.png' is the file name and the 'mydiyps' is the folder it's in
+
+~technology!~
