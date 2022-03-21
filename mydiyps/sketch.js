@@ -1,28 +1,26 @@
-//var img;
-var img1 = loadImage("heartstickers.png");
-var img2 = loadImage("rippedpaper.png");
+var img;
 var initials ='slc'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
- preload() //runs once, it may make you wait
-  img1 = loadImage('mydiyps/heartstickers.png')
-  img2 = loadImage('mydiyps/rippedpaper.png')
+ //preload() //runs once, it may make you wait
+  //img1 = loadImage('mydiyps/heartstickers.png')
+  //img2 = loadImage('mydiyps/rippedpaper.png')
 //link to an image on your github account
-  //image1 = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
-  //image2 = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
+  img1 = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
+  bg = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
 }
 
 function setup() {
 createCanvas(875, 700);  // canvas size
-background(251, 248, 243);
+//background(251, 248, 243); //single color bg
+  background(bg);
 
 }
 
 function draw() {
-  image(img2, 0, 0, 875, 700)
   if (keyIsPressed) {
     choice = key; // set choice to the key that was pressed
     clear_print(); // check to see if it is clear screen or save image
@@ -33,9 +31,6 @@ function draw() {
 }
 
 function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
-  // the key mapping if statements that you can change to do anything you want.
-  // just make sure each key option has the a stroke or fill and then what type of 
-  // graphic function
 
  if (toolChoice == '1' ) {  //brush pen
     stroke(28, 7, 20);
@@ -159,8 +154,8 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     noStroke();
     rect(mouseX, mouseY, pmouseX, pmouseY);
 
-  } else if (toolChoice == 'g' || toolChoice == 'G') { //sticker, places the image we pre-loaded
-    image(img1, mouseX, mouseY);
+  } else if (toolChoice == 'g' || toolChoice == 'G') { //sticker, places the image
+    image(img1, mouseX-60, mouseY-60);
   }
  }
 function testbox(r, g, b) {
