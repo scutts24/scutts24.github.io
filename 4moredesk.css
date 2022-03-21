@@ -102,23 +102,24 @@ img {
   color: dimgrey;
 }
 
-.rock2 {
+.scissors {
   position: absolute;
-  top: 23%;
-  left: 23%;
+  top: 27%;
+  left: 45%;
   transform: translate(-50%, -50%);
-  font-size: 3vw;
+  font-size: 4vw;
   font-family: monospace;
-  color: dimgrey;
+  color: lightgrey;
 }
 
-.rock3 {
+.dialogue {
   position: absolute;
-  top: 40%;
-  right: 50%;
+  bottom: 5%;
+  left: 45%;
   transform: translate(-50%, -50%);
-  font-size: 3vw;
+  font-size: 1.2vw;
   font-family: monospace;
+  color: lightgrey;
 }
 
 .secret {

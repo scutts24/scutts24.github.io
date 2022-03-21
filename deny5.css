@@ -8,7 +8,7 @@ body {
   color: black;
 }
 
-.bottom-left {
+.choice {
   position: absolute;
   bottom: 14.5%;
   right: 31.2%;
@@ -16,16 +16,16 @@ body {
   font-size: 1.5vw;
 }
 
-.top-left {
+.end {
   position: absolute;
   top: 12%;
-  right: 36.5%;
+  right: 33.5%;
   transform: translate(-50%, -50%);
   font-size: 2.5vw;
   font-family: monospace;
 }
 
-.top-right {
+.head {
   position: absolute;
   top: 10%;
   right: 32%;
@@ -33,7 +33,7 @@ body {
   font-family: monospace;
 }
 
-.bottom-right {
+.comment {
   position: absolute;
   bottom: 15%;
   right: 37.5%;

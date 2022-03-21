@@ -109,6 +109,35 @@ img {
   transform: translate(-50%, -50%);
   font-size: 3vw;
   font-family: monospace;
+  color: dimgrey;
+}
+
+.rock3 {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: monospace;
+  color: dimgrey;
+}
+
+.rock4 {
+  position: absolute;
+  bottom: 25%;
+  right: 43%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: monospace;
+}
+
+.scissors {
+  position: absolute;
+  top: 27%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  font-family: monospace;
 }
 
 .secret {

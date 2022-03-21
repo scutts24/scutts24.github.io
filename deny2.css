@@ -8,24 +8,24 @@ body {
   color: floralwhite;
 }
 
-.top-right {
+.deny3 {
   position: absolute;
   bottom: 30%;
   right: 17%;
   font-size: 1.5vw;
 }
 
-.bottom-right {
+.play {
   position: absolute;
-  bottom: 12%;
+  bottom: 10%;
   right: 45%;
   font-size: 2.5vw;
 }
 
-.centered {
+.dialogue {
   position: absolute;
-  top: 78%;
-  left: 44%;
+  top: 80%;
+  left: 46%;
   transform: translate(-50%, -50%);
 }
 

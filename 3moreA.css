@@ -99,6 +99,16 @@ img {
   transform: translate(-50%, -50%);
   font-size: 3vw;
   font-family: monospace;
+  color: dimgrey;
+}
+
+.rock2 {
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: monospace;
 }
 
 .scissors {

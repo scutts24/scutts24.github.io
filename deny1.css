@@ -10,8 +10,15 @@ body {
 
 .centered {
   position: absolute;
-  top: 83.5%;
+  top: 82%;
   left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.deny2 {
+  position: absolute;
+  bottom: 5%;
+  right: 30%;
   transform: translate(-50%, -50%);
 }
 
