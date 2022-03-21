@@ -1,0 +1,6 @@
+idk i guess sorting by folders in my usual fashion JUST FUCKS SHIT UP so imma just add tags and those color code dot things that mac lets you put on crap
+
+photos/gifs/videos: red dot
+net art html files: orange dot
+net art css files: yellow dot
+p5js files: green dot
