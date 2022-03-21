@@ -4,3 +4,5 @@ photos/gifs/videos: red dot
 net art html files: orange dot
 net art css files: yellow dot
 p5js files: green dot
+
+haha nvm just make a custom tag and change file sorting options to 'by tag', it's more specific that way
