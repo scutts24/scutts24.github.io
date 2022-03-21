@@ -8,14 +8,6 @@ body {
   color: black;
 }
 
-.choice {
-  position: absolute;
-  bottom: 14.5%;
-  right: 35.2%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5vw;
-}
-
 .sorry {
   position: absolute;
   top: 12%;
@@ -25,13 +17,29 @@ body {
   font-family: monospace;
 }
 
+.scissors {
+  position: absolute;
+  top: 65%;
+  right: 41.5%;
+  transform: translate(-50%, -50%);
+  font-size: 9vw;
+}
+
 .comment {
   position: absolute;
-  bottom: 15%;
+  bottom: 12%;
   right: 24%;
   transform: translate(-50%, -50%);
   font-size: 1.5vw;
   font-family: cursive;
+}
+
+.choice {
+  position: absolute;
+  bottom: 11.5%;
+  right: 35.2%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
 }
 
 p {
