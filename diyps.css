@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: floralwhite;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.text {
+color: floralwhite;
+text-align: left;
+width: 90%;
+font-family: monospace;
+font-size: 1.2vw;
+}
+.return {
+color: floralwhite;
+text-align: left;
+width: 90%;
+font-family: monospace;
+font-size: 1.2vw;
+}
+
+.image {
+  position: relative;
+}
+.photo1 {
+  position: absolute;
+  top: 35%;
+  right: 2%;
+}
+.photo1:hover {
+  position: absolute;
+  top: 35%;
+  right: 2%;
+  transform: rotate(180deg);
+  filter: invert(100%);
+}
+img {
+  border-radius: 50%;
+  width: 10vw;
+  height:  10vw;
+}
+
+.scissors {
+  position: absolute;
+  bottom: -30%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+  font-family: monospace;
+  text-align: center;
+  color: black;
+}
+.scissors:hover {
+  filter: invert(6%);
+  text-decoration: none;
+}
+
+.return {
+font-size: 1.2vw;
+}
