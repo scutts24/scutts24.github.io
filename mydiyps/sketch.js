@@ -170,7 +170,7 @@ function clear_print() {
 // this will do one of two things, x clears the screen by resetting the background
 // p calls the routine saveme, which saves a copy of the screen
   if (key == 'x' || key == 'X') {
-    background(screenbg); // set the screen back to the background color
+    background(bg); // set the screen back to the background
   } else if (key == 'p' || key == 'P') {
      saveme();  // call saveme which saves an image of the screen
   }
