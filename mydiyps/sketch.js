@@ -13,13 +13,13 @@ function preload() {
 }
 
 function setup() {
-bg = loadImage(img2);
 createCanvas(875, 700);  // canvas size
-//background(251, 248, 243);
+background(251, 248, 243);
 
 }
 
 function draw() {
+  image(img2, 0, 0, 875, 700)
   if (keyIsPressed) {
     choice = key; // set choice to the key that was pressed
     clear_print(); // check to see if it is clear screen or save image
