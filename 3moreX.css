@@ -1,0 +1,53 @@
+body {
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.choice {
+  position: absolute;
+  bottom: 14.5%;
+  right: 31.2%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+}
+
+.end {
+  position: absolute;
+  top: 12%;
+  right: 28.6%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5vw;
+  font-family: monospace;
+}
+
+.head {
+  position: absolute;
+  top: 10%;
+  right: 31%;
+  font-size: 3vw;
+  font-family: monospace;
+}
+
+.comment {
+  position: absolute;
+  bottom: 15%;
+  right: 19%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5vw;
+  font-family: cursive;
+}
+
+p {
+text-align: center;
+width: 115%;
+}
+
+a {
+text-align: center;
+font-family: monospace;
+}
