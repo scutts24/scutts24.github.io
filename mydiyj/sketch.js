@@ -5,9 +5,6 @@ var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
- //preload() //runs once, it may make you wait
-  //img1 = loadImage('mydiyj/heartstickers.png')
-  //img2 = loadImage('mydiyj/rippedpaper.png')
 //link to an image on your github account
   img1 = loadImage('https://scutts24.github.io/mydiyj/heartstickers.png');
   bg = loadImage('https://scutts24.github.io/mydiyj/rippedpaper.png');
