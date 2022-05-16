@@ -19,7 +19,7 @@ body {
 .end {
   position: absolute;
   top: 12%;
-  right: 36%;
+  right: 33.5%;
   transform: translate(-50%, -50%);
   font-size: 2.5vw;
   font-family: monospace;
@@ -28,24 +28,15 @@ body {
 .head {
   position: absolute;
   top: 10%;
-  right: 43%;
+  right: 37%;
   font-size: 3vw;
   font-family: monospace;
 }
 
-.comment1 {
+.comment {
   position: absolute;
-  bottom: 23%;
-  right: 18%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5vw;
-  font-family: cursive;
-}
-
-.comment2 {
-  position: absolute;
-  bottom: 17%;
-  right: 15%;
+  bottom: 15%;
+  right: 25.5%;
   transform: translate(-50%, -50%);
   font-size: 1.5vw;
   font-family: cursive;
