@@ -6,8 +6,8 @@ var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
 //link to an image on your github account
-  img1 = loadImage('https://scutts24.github.io/mydiyj/heartstickers.png');
-  bg = loadImage('https://scutts24.github.io/mydiyj/rippedpaper.png');
+  img1 = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
+  bg = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
 }
 
 function setup() {
