@@ -5,6 +5,9 @@ var screenbg = 250; // off white background
 var lastscreenshot=61; // last screenshot never taken
 
 function preload() {
+ //preload() //runs once, it may make you wait
+  //img1 = loadImage('mydiyj/heartstickers.png');
+  //img2 = loadImage('mydiyj/rippedpaper.png');
 //link to an image on your github account
   img1 = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
   bg = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
@@ -12,12 +15,13 @@ function preload() {
 
 function setup() {
 createCanvas(875, 700);  // canvas size
-//background(251, 248, 243); //single color bg
+//background(251, 248, 243);
   background(bg);
 
 }
 
 function draw() {
+
   if (keyIsPressed) {
     choice = key; // set choice to the key that was pressed
     clear_print(); // check to see if it is clear screen or save image
@@ -151,7 +155,7 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
     noStroke();
     rect(mouseX, mouseY, pmouseX, pmouseY);
 
-  } else if (toolChoice == 'g' || toolChoice == 'G') { //sticker, places the image
+  } else if (toolChoice == 'g' || toolChoice == 'G') { //sticker, places the image we pre-loaded
     image(img1, mouseX-60, mouseY-60);
   }
  }
