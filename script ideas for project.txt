@@ -1,0 +1,41 @@
+*(start outside, day zero, white bg w blue text)*
+
+>...
+   [...]
+>damn, it's so bright out.
+   [go inside]
+>T's probably awake by now...
+   [go inside]
+>...
+   [...]
+
+*(goes inside, black bg w white text)*
+
+"hey. how was school?"
+   [''good''] or ['it was alright'], same outcome either way
+>i heard we don't have to go back to school until after spring break. some cautionary measure, i guess.
+"yea, i got an email about that. they're basically giving you a reason to be lazy for a few weeks. i don't see what the big deal is. it will probably just be over soon anyways, like flu season."
+   [...]
+
+*(spoiler alert: it was kind of a big deal, and it wasn't over soon)*
+
+*(inside, day 175)*
+"that's a nice laptop. isn't that a macbook?"
+   ['yes'] or ['no'] but 'no' is not actually an option
+>yea, it's a hand-me-down. i figured i'd use it for school since it's easy to carry around.
+"that's cool. i'm thinking of buying another device soon so we have an extra one in case any of the other ones give us trouble while trying to join zoom."
+   ['cool'] or ['alright']
+"speaking of devices, where's that chromebook you borrowed from school? i've never seen you use it."
+   ['i didn't borrow one']
+>i never borrowed a chromebook. i figured my laptop was good enough, and i don't want to waste school resources by checking out something i wouldn't use.
+"but you told me you were going to borrow a laptop. we talked about this over text before the new school year started."
+   ['yea, and i told you i was not going to get one']
+>yea, and i told you i was not going to borrow a school chromebook for the same reasons i said just now.
+"you didn't say that at all. in fact, i asked you to do it so we could have an extra device on hand, and you promised that you would."
+   ['that's not true'] or ['go back and check the texts'], same outcome
+>that's not how i remember it. if it's really that big of an issue, just check the texts again or ask M for clarification.
+"why are you always ganging up on me? i'm just trying to be a good parent and have fun with my kids, but then you do stuff like this and ruin our time together. plus, M would probably only side with you because everyone would rather placate you than be attacked by you all the time."
+   ['but-']
+>but i didn't even start this fight. we were just talking about laptops and then you got mad about something i didn't even do.
+"i don't want to talk about this anymore. there's either something very wrong with you, or you're getting some sort of sick satisfaction by causing problems whenever i try to have a normal conversation. if your intent was to ruin the time we have together, good job."
+   [...]
