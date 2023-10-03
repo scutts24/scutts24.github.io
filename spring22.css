@@ -1,0 +1,37 @@
+body {
+  background-color: antiquewhite;
+  font-family: Luminari, fantasy;
+  font-size: 100%;
+}
+
+.title {
+  color: rosybrown;
+}
+
+.dialogue {
+  text-align: center;
+  color: rosybrown;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.choice {
+  text-align: center;
+  color: burlywood;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+a {
+  text-decoration: none;
+  color: rosybrown;
+}
+
+a:hover, a:active {
+  color: lightpink;
+  font-weight: bold;
+}
