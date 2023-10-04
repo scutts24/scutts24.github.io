@@ -11,11 +11,6 @@ body {
 .image {
   position: relative;
 }
-.enter {
-  position: absolute;
-  top: 15%;
-  right: 10%;
-}
 
 img {
   border-radius: 50%;
