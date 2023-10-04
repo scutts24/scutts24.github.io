@@ -1,190 +1,125 @@
-var img;
-var initials ='slc'; // your initials
-var choice = '1'; // starting choice, so it is not empty
-var screenbg = 250; // off white background
-var lastscreenshot=61; // last screenshot never taken
+var ballx = 100;
+var bally = 100;
+var ballsize = 60;
+var score = 0;
+var gameState = "start";
 
 function preload() {
- //preload() //runs once, it may make you wait
-  //img1 = loadImage('mydiyj/heartstickers.png');
-  //img2 = loadImage('mydiyj/rippedpaper.png');
-//link to an image on your github account
-  img1 = loadImage('https://scutts24.github.io/mydiyps/heartstickers.png');
-  bg = loadImage('https://scutts24.github.io/mydiyps/rippedpaper.png');
+  startbg = loadImage('https://scutts24.github.io/introcat.png');
+  lvl1bg = loadImage('https://scutts24.github.io/level1bg.png');
+  lvl2bg = loadImage('https://scutts24.github.io/level2bg.png');
+  lvl3bg = loadImage('https://scutts24.github.io/level3bg.png');
+  img1 = loadImage('https://scutts24.github.io/sittingcat.png');
+  img2 = loadImage('https://scutts24.github.io/screamingcat.png');
 }
 
 function setup() {
-createCanvas(875, 700);  // canvas size
-//background(251, 248, 243);
-  background(bg);
-
-}
+  createCanvas(600, 600);
+  textAlign(CENTER);
+} //end setup
 
 function draw() {
-
-  if (keyIsPressed) {
-    choice = key; // set choice to the key that was pressed
-    clear_print(); // check to see if it is clear screen or save image
+  if(gameState == "start"){
+  background(startbg);
+  startGame(); 
   }
-  if (mouseIsPressed){
-    newkeyChoice(choice);  // if the mouse is pressed call newkeyChoice
+  if(gameState == "L1"){
+    background(50); 
+  levelOne(); 
   }
-}
-
-function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
-
- if (toolChoice == '1' ) {  //brush pen
-    stroke(28, 7, 20);
-  strokeWeight(1);
-  const width = 1;
-  const lerps = 255;
-  for (let i = 0; i <= lerps - 1; i++) {
-    const x = lerp(mouseX, pmouseX, i / lerps);
-    const y = lerp(mouseY, pmouseY, i / lerps);
-    line(x - width, y - width, x + width, y + width);
+  if(gameState == "L2"){
+    background(100); 
+    levelTwo(); 
   }
-
-  } else if (toolChoice == '2') { //whiteout pen
-    stroke(255, 255, 255);
-    strokeWeight(5);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-   
-  } else if (toolChoice == '3') { //blue pen
-    stroke(13, 0, 255);
-    strokeWeight(2);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-
-  } else if (toolChoice == '4') { //pink crayon or something idk
-    stroke(255, 0, 157);
-  strokeWeight(1);
-  const speed = abs(1) + abs(1);
-  const minRadius = 1;
-  const sprayDensity = 10;
-  const r = speed + minRadius;
-  const rSquared = r * r;
-  const lerps = 5;
-  for (let i = 0; i < lerps; i++) {
-    const lerpX = lerp(mouseX, pmouseX, i / lerps);
-    const lerpY = lerp(mouseY, pmouseY, i / lerps);
-    for (let j = 0; j < sprayDensity; j++) {
-      const randX = random(-r, r);
-      const randY = random(-1, 1) * sqrt(rSquared - randX * randX);
-      point(lerpX + randX, lerpY + randY);
-    }
+  if(gameState == "L3"){
+    background(100); 
+    levelThree(); 
   }
-
-  } else if (toolChoice == '5') { //big yellow crayon
-    stroke(252, 202, 3);
-  strokeWeight(4);
-  const speed = abs(1) + abs(1);
-  const minRadius = 5;
-  const sprayDensity = 10;
-  const r = speed + minRadius;
-  const rSquared = r * r;
-  const lerps = 5;
-  for (let i = 0; i < lerps; i++) {
-    const lerpX = lerp(mouseX, pmouseX, i / lerps);
-    const lerpY = lerp(mouseY, pmouseY, i / lerps);
-    for (let j = 0; j < sprayDensity; j++) {
-      const randX = random(-r, r);
-      const randY = random(-1, 1) * sqrt(rSquared - randX * randX);
-      point(lerpX + randX, lerpY + randY);
-    }
+  if(gameState == "end"){
+    background(250,160,70);
+    endGame();
   }
-     
-  } else if (key == '6') { //pink glitter
-    stroke(255, 163, 187);
-  strokeWeight(1);
-  const speed = abs(mouseX - pmouseX) + abs(mouseY - pmouseY);
-  const minRadius = 0.2;
-  const sprayDensity = 80;
-  const r = speed + minRadius;
-  const rSquared = r * r;
-  const lerps = 5;
-  for (let i = 0; i < lerps; i++) {
-    const lerpX = lerp(mouseX, pmouseX, i / lerps);
-    const lerpY = lerp(mouseY, pmouseY, i / lerps);
-    for (let j = 0; j < sprayDensity; j++) {
-      const randX = random(-r, r);
-      const randY = random(-1, 1) * sqrt(rSquared - randX * randX);
-      point(lerpX + randX, lerpY + randY);
-    }
-  }  
- 
-  } else if (toolChoice == '7') { //sprinkles mix
-    //stroke(random(255), random(150), random(200), random(255)); nvm, save for later if needed tho
-    const hue = (frameCount * 10) % 360;
-  const hsbaColor = color(`hsba(${hue}, 100%, 100%, 0.6)`);
-  stroke(hsbaColor);
-  strokeWeight(2);
-  const speed = abs(1) + abs(1);
-  const minRadius = 35;
-  const sprayDensity = 10;
-  const r = speed + minRadius;
-  const rSquared = r * r;
-  const lerps = 5;
-  for (let i = 0; i < lerps; i++) {
-    const lerpX = lerp(mouseX, pmouseX, i / lerps);
-    const lerpY = lerp(mouseY, pmouseY, i / lerps);
-    for (let j = 0; j < sprayDensity; j++) {
-      const randX = random(-r, r);
-      const randY = random(-1, 1) * sqrt(rSquared - randX * randX);
-      point(lerpX + randX, lerpY + randY);
-    }
-  }
-    
-  } else if (toolChoice == '8') { //rainbow square outlined stickers
-    const hue = (frameCount * 10) % 360;
-  const hsbaColor = color(`hsba(${hue}, 100%, 100%, 0.6)`);
-  fill(hsbaColor);
-    stroke(0);
-    strokeWeight(1);
-    rect(mouseX, mouseY, 10, 10);
-    
-  } else if (toolChoice == '9') { //rainbow squares
-    const hue = (frameCount * 10) % 360;
-  const hsbaColor = color(`hsba(${hue}, 100%, 100%, 0.6)`);
-  fill(hsbaColor);
-    noStroke();
-    rect(mouseX, mouseY, 10, 10);
+} //end draw
 
-  } else if (toolChoice == '0') { //rainbow jumble thing
-    const hue = (frameCount * 10) % 360;
-  const hsbaColor = color(`hsba(${hue}, 100%, 100%, 0.6)`);
-  fill(hsbaColor);
-    noStroke();
-    rect(mouseX, mouseY, pmouseX, pmouseY);
-
-  } else if (toolChoice == 'g' || toolChoice == 'G') { //sticker, places the image we pre-loaded
-    image(img1, mouseX-60, mouseY-60);
-  }
- }
-function testbox(r, g, b) {
-// this is a test function that will show you how you can put your own functions into the sketch
-  x = mouseX;
-  y = mouseY;
-  fill(r, g, b);
-  rect(x-50, y-50, 100, 100);
-}
-
-function clear_print() {
-// this will do one of two things, x clears the screen by resetting the background
-// p calls the routine saveme, which saves a copy of the screen
-  if (key == 'x' || key == 'X') {
-    background(screenbg); // set the screen back to the background
-    background(bg); //replaces paper
-  } else if (key == 'p' || key == 'P') {
-     saveme();  // call saveme which saves an image of the screen
-  }
-}
-
-function saveme(){
-    //this will save the name as the intials, date, time and a millis counting number.
-    // it will always be larger in value then the last one.
-  filename=initials+day() + hour() + minute() +second();
-  if (second()!=lastscreenshot) { // don't take a screenshot if you just took one
-    saveCanvas(filename, 'jpg');
-  }
-  lastscreenshot=second(); // set this to the current second so no more than one per second
+function startGame(){
+  stroke('rgba(156,39,176,0.5)');
+  strokeWeight(5);
+  fill(255, 255, 255);
+  textSize(20);
   
-}
+  text("chase your cat through the backrooms to take it to the vet", width/2, height-570);
+  text("[click anywhere on screen to start]", width/2, height-20);
+ 
+  textSize(10);
+  text("your devious little furgremlin has managed to evade the dreaded catcarrier and escaped the house right before their vet checkup!", width/2, height-530);
+  text("what's worse, they somehow managed to no-clip out of reality! do not let your precious bean be consumed by the unspeakable", width/2, height-510);
+  text("horrors that undoubtedly await them in the backrooms! catch them before anything else does!", width/2, height-490);
+  text("if you can no longer see the cat, this is because they are trying to no-clip out of the room again and are hiding on the edges of", width/2, height-470);
+  text("your vision. simply rumage around the area to startle the cat back into your current plane of existance and continue to give chase.", width/2, height-450);
+  text("remember: they can't run forever! you will prevail eventually...", width/2, height-50);
+  
+  textSize(20);
+  if (mouseIsPressed === true){
+    gameState = "L1";}
+} // end of game start
+
+function levelOne(){
+  background(lvl1bg);
+  text("room 1", width/2, height-20);
+  var distToBall= dist(ballx, bally, mouseX, mouseY);
+  if (distToBall <ballsize/2){
+    ballx = random(width);
+    bally= random(height);
+    score= score +1;
+  }
+  if(score>10){
+ gameState= "L2";
+  } //change level
+  
+  image(img1, ballx, bally, ballsize, ballsize);
+} // end level one
+
+function levelTwo(){
+  background(lvl2bg);
+  text("room 2", width/2, height-20);
+  var distToBall= dist(ballx, bally, mouseX, mouseY);
+  if (distToBall <ballsize/2){
+    ballx = random(width);
+    bally= random(height);
+    score= score +1;
+  }
+  if(score>20){
+   gameState = "L3";
+  } //change level
+   
+  image(img1, ballx, bally, ballsize, ballsize);
+} // end level two
+
+function levelThree(){
+  background(lvl3bg);
+  text("room 3", width/2, height-20);
+  var distToBall= dist(ballx, bally, mouseX, mouseY);
+  if (distToBall <ballsize/2){
+    ballx = random(width);
+    bally= random(height);
+    score= score +1;
+  }
+  if(score>30){
+ gameState = "end";
+  }
+  
+  image(img2, ballx, bally, ballsize, ballsize);
+} // end level three
+
+function endGame(){
+  background(startbg);
+  
+  textSize(20);
+  text("congratulations! you have succeeded!", width/2, height-570);
+  text("[reload webpage for chance to restart]", width/2, height-20);
+ 
+  textSize(10);
+  text("wow! you survived the backrooms and also managed to stumble across a means of escape!", width/2, height-530);
+  text("more impressively, you also managed to catch your cat and return home in time for their vet appointment! well done!", width/2, height-510);
+  
+} // end of game end
