@@ -8,6 +8,10 @@ body {
   color: darkseagreen;
 }
 
+.text {
+  color: aliceblue;
+}
+
 .dialogue {
   text-align: center;
   color: rosybrown;
