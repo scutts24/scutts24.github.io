@@ -9,7 +9,6 @@ body {
 }
 
 .text {
-  text-align: center;
   color: darkseagreen;
   position: absolute;
   top: 30%;
@@ -18,12 +17,16 @@ body {
 }
 
 .choice {
-  text-align: center;
+  text-align: left;
   color: burlywood;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.photos {
+  position: relative;
 }
 
 a {
