@@ -1,5 +1,5 @@
 body {
-  background-color: darkslategrey;
+  background-color: black;
   font-family: Courier New, monospace;
   font-size: 100%;
 }
@@ -9,12 +9,8 @@ body {
 }
 
 .text {
-  color: aliceblue;
-}
-
-.dialogue {
   text-align: center;
-  color: rosybrown;
+  color: darkseagreen;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -39,3 +35,5 @@ a:hover, a:active {
   color: aliceblue;
   font-weight: bold;
 }
+
+////nice colors: darkseagreen; darkslategrey; burlywood; aliceblue; rosybrown;
