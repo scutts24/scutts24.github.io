@@ -1,0 +1,41 @@
+body {
+  background-color: darkslategrey;
+  font-family: Courier New, monospace;
+  font-size: 100%;
+}
+
+.title {
+  color: darkseagreen;
+}
+
+.text {
+  color: aliceblue;
+}
+
+.dialogue {
+  text-align: center;
+  color: rosybrown;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.choice {
+  text-align: center;
+  color: burlywood;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+a {
+  text-decoration: none;
+  color: darkseagreen;
+}
+
+a:hover, a:active {
+  color: aliceblue;
+  font-weight: bold;
+}
