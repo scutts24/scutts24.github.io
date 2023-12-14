@@ -1,7 +1,13 @@
 body {
   background-color: black;
+  margin: auto;
+  width: 640px; 
+  padding: 50px;
   font-family: Courier New, monospace;
-  font-size: 100%;
+}
+
+img{
+  padding: 10px; 
 }
 
 .title {
