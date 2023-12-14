@@ -15,10 +15,11 @@ img{
 .title {
   color: darkseagreen;
   text-align: center;
-  font-size: 3vw;
 }
 
 .text {
+  margin-left: 80;
+  margin-right: 80;
   color: darkseagreen;
   text-align: center;
 }
