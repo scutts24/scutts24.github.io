@@ -6,24 +6,10 @@ body {
 
 .title {
   color: darkseagreen;
+  text-align: center;
 }
 
-.text {
-  color: darkseagreen;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.choice {
-  text-align: left;
-  color: burlywood;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+////div class for text was here but didn't like it
 
 .photos {
   position: relative;
@@ -38,5 +24,3 @@ a:hover, a:active {
   color: aliceblue;
   font-weight: bold;
 }
-
-////nice colors: darkseagreen; darkslategrey; burlywood; aliceblue; rosybrown;
