@@ -9,7 +9,10 @@ body {
   text-align: center;
 }
 
-////div class for text was here but didn't like it
+.text {
+  color: darkseagreen;
+  text-align: center;
+}
 
 .photos {
   position: relative;
