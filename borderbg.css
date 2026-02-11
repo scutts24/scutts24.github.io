@@ -10,6 +10,7 @@ body {
 
 .text {
   color: rgb(46, 45, 41);
+  text-align: left;
 }
 
 .dialogue {
@@ -33,19 +34,19 @@ body {
 .container {
   display: flex;
   position: relative;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
   border-radius: 25px; /* makes corners round */
   border: 2px solid #2E2D29;
   background-color: #F5F3ED;
-  padding: 10px 10px 10px; /* top, left/right, bottom */
+  padding: 10px 10px 10px; /* text top, left/right, bottom */
 }
 
 .container::after {
   content: "";
   position: absolute;
-  height: 75vh;
-  width: 95vh;
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
 }
 
 a {
