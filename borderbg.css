@@ -31,13 +31,14 @@ body {
 }
 
 .container {
-  position: relative;
   display: flex;
+  position: relative;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
   border-radius: 25px; /* makes corners round */
   border: 2px solid #2E2D29;
   background-color: #F5F3ED;
+  margin-top: 20px;
   padding: 15px 10px 15px; /* top, left/right, bottom */
 }
 
@@ -46,7 +47,6 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  height: 80%; /* Height relative to the parent container */
   width: 95vh;
 }
 
