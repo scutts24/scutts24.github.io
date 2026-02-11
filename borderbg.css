@@ -30,15 +30,16 @@ body {
   transform: translate(-50%,-50%);
 }
 
-.container {
+.moving-border {
+  margin: 20px;
   width: calc(100% - 10px);
   height: calc(100% - 100px);
-  border-radius: 25px; /* makes corners round */
   border: 2px solid #2E2D29;
+  box-sizing: border-box;
+  border-radius: 25px; /* makes corners round */
   background-color: #F5F3ED;
   padding: 10px 10px 10px; /* text top, left/right, bottom */
   text-align: left;
-  box-sizing: border-box;
 }
 
 a {
