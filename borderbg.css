@@ -31,7 +31,10 @@ body {
 }
 
 .moving-border {
-  margin: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
   width: calc(100% - 10px);
   height: calc(100% - 100px);
   border: 2px solid #2E2D29;
