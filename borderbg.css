@@ -38,15 +38,10 @@ body {
   background-color: #F5F3ED;
   padding: 10px 10px 10px; /* text top, left/right, bottom */
   text-align: left;
-}
-
-.container::after {
-  content: "";
-  position: absolute;
-  margin-top: 70vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  margin-bottom: 70vh;
+  margin-top: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 100px;
 }
 
 a {
