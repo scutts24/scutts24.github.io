@@ -35,8 +35,8 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 50px;
-  width: calc(100% - 10px);
-  height: calc(100% - 100px);
+  width: calc(100% - 20px);
+  height: calc(100% - 70px);
   border: 2px solid #2E2D29;
   box-sizing: border-box;
   border-radius: 25px; /* makes corners round */
