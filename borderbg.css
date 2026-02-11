@@ -31,15 +31,23 @@ body {
 }
 
 .container {
+  position: relative;
   display: flex;
-  justify-content: 200px; /* horizontal */
+  justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
   border-radius: 25px; /* makes corners round */
   border: 2px solid #2E2D29;
   background-color: #F5F3ED;
+  padding: 15px 10px 15px; /* top, left/right, bottom */
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80%; /* Height relative to the parent container */
   width: 95vh;
-  height: 75vh;  
-  padding: 10px 20px 15px; /* top, left/right, bottom */
 }
 
 a {
