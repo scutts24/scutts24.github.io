@@ -32,13 +32,14 @@ body {
 
 .container {
   display: flex;
-  justify-content: center; /* horizontal */
+  justify-content: 200px; /* horizontal */
   align-items: center;     /* vertical */
   border-radius: 25px; /* makes corners round */
   border: 2px solid #2E2D29;
   background-color: #F5F3ED;
-  width: 80vh;
-  height: 65vh;  
+  width: 95vh;
+  height: 75vh;  
+  padding: 10px 20px 15px; /* top, left/right, bottom */
 }
 
 a {
