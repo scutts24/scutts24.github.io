@@ -54,5 +54,14 @@
   </div>
 </div>
 
+<script>
+  function resizeDiv() {
+    var windowHeight = window.innerHeight;
+    document.getElementById('div2').style.height = windowHeight + 'px';
+  }
+  window.addEventListener('load', resizeDiv);
+  window.addEventListener('resize', resizeDiv);
+</script>
+
 </body>
 </html>
