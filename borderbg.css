@@ -43,10 +43,10 @@ body {
 .container::after {
   content: "";
   position: absolute;
-  margin-top: 50vh;
-  margin-left: 10vh;
-  margin-right: 10vh;
-  margin-bottom: 50vh;
+  margin-top: 70vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 70vh;
 }
 
 a {
